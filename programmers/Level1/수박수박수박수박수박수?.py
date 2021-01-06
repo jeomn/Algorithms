@@ -6,3 +6,9 @@ def solution(n):
         if i%2 == 0:
             answer +="박"
     return answer
+
+
+#20210106_review
+def solution(n):
+    answer = "수박" * n
+    return answer[:n]
