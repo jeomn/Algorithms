@@ -35,7 +35,7 @@ def solution(s):
             zip_s += temp_s
         else:
             zip_s += (str(count) + temp_s)
-        #1-문자열 검사 후 압축 길이 저장
+        #1-압축 문자열의 길이 저장
         zip_length.append(len(zip_s))
             
     answer = min(zip_length)
