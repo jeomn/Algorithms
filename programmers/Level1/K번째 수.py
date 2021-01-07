@@ -10,7 +10,7 @@ def solution(array, commands):
     return answer
 
 
-#20210107_
+#20210107_review
 def solution(array, commands):
     answer, _array = [], []
     for i in range(0, len(commands)):
