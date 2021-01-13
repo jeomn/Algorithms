@@ -19,3 +19,4 @@ def solution(s, n):
         else:
             answer += s[i]
     return answer
+
