@@ -22,3 +22,4 @@ def solution(array, commands):
         answer.append(_array[n])
     
     return answer
+
