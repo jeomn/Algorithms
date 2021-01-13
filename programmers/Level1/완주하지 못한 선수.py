@@ -13,3 +13,4 @@ def solution(participant, completion):
     n_com = Counter(participant) - Counter(completion)
     answer = list(n_com)[0]
     return answer
+
