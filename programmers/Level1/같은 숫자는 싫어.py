@@ -14,3 +14,4 @@ def solution(arr):
         if arr[i-1]  != arr[i]:
             answer.append(arr[i])         
     return answer
+
