@@ -26,3 +26,4 @@ def solution(n, lost, reserve):
     
     answer = n - len(set_lost)
     return answer
+
