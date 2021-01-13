@@ -15,3 +15,4 @@ def solution(a, b):
     for i in range(m, m+n+1):
         answer += i
     return answer
+
