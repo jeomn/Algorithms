@@ -7,9 +7,7 @@ def solution(phone_number):
 
 
 #20210105_review
-"""
 def solution(phone_number):
     phone_number = list(phone_number)
     phone_number[:-4] = "*"*len(phone_number[:-4])
     return ''.join(phone_number)
-"""
