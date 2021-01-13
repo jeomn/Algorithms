@@ -8,7 +8,6 @@ def solution(x):
 
 
 #20210105_review
-"""
 def solution(x):
     x_list = []
     cx = x
@@ -27,4 +26,3 @@ def solution(x):
     else:
         answer = False
     return answer
-"""
