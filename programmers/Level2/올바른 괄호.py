@@ -2,8 +2,6 @@ from collections import Counter
 
 def solution(s):
     answer = True
-    i = 0
-    j = len(s)-1
     s_stack = []
     
     count_s = Counter(s)
@@ -20,4 +18,7 @@ def solution(s):
                 #stack에 값이 없는데 ')'이면
                 else:
                     return False
+    
+    if len(s_stack) != 0: 
+        answer = False
     return answer
