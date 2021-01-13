@@ -14,3 +14,5 @@ def solution(s):
         return s[(num_s//2)-1 : (num_s//2)+1]
     elif num_s%2 ==1:
         return s[num_s//2]
+
+    
