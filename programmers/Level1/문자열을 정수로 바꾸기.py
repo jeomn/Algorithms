@@ -6,3 +6,4 @@ def solution(s):
 #20210106_review
 def solution(s):
     return float(s)
+
