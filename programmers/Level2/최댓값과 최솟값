@@ -1,0 +1,13 @@
+def solution(s):
+    s_list = s.split(" ")
+    maxs = abs(int(max(s)))
+    plus_slist = []
+    
+    for i in s_list:
+        plus_slist.append(int(i) + maxs)
+
+    minps = plus_slist.index(min(plus_slist))
+    maxps = plus_slist.index(max(plus_slist))
+    answer = s_list[minps] + ' ' + s_list[maxps]
+    
+    return answer
