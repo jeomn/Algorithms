@@ -1,4 +1,4 @@
-#
+#스택/큐
 def solution(bridge_length, weight, truck_weights):
     answer = 0
     idx = 0
