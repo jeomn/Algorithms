@@ -23,7 +23,7 @@ def solution(people, limit):
 
 
 
-#210201 리뷰
+#2021/02/01 리뷰
 #탐욕법(Greedy)
 def solution(people, limit):
     answer = 0
