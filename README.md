@@ -1,5 +1,6 @@
 # algorithms
-알고리즘 공부   
+알고리즘 공부<Br>
+(참고)알고리즘 공부, 어떻게 해야 하나요? https://baactree.tistory.com/52
 
 ## programmers
 [프로그래머스](https://programmers.co.kr/) <코딩테스트 연습> 풀이<Br>
