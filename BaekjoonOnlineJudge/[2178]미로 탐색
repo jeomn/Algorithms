@@ -1,4 +1,4 @@
-def dfs(graph, N, M, start):
+def bfs(graph, N, M, start):
     route = [start]
     visit = [[0] * M for _ in range(N)]
     visit[0][0] = 1
@@ -27,5 +27,5 @@ if __name__=="__main__":
         for col in range(M):
             maze[row][col] = int(rowLine[col])
 
-    dfsResult = dfs(maze, N, M, [0, 0])
-    print(dfsResult[N-1][M-1])
+    bfsResult = bfs(maze, N, M, [0, 0])
+    print(bfsResult[N-1][M-1])
