@@ -22,7 +22,6 @@ if __name__=="__main__":
         graph[a-1][b-1] = min(graph[a-1][b-1], d)
 
     minRoute = floydWarshall(n, graph)
-    minRoute = [distance if distance != float(1e9) else None for distance in minRoute]
     for s in minRoute:
         for e in range(n):
             if s[e] == float(1e9):
