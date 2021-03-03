@@ -1,4 +1,4 @@
-#찾아라 프로그래밍 마에
+#찾아라 프로그래밍 마에스터
 from collections import deque
 
 def solution(maps):
