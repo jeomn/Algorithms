@@ -55,3 +55,4 @@ if __name__=="__main__":
 
     mst_weight = kruskal(graph)
     print(format(mst_weight, ".2f"))
+    #print("%0.2f" % mst_weight)
