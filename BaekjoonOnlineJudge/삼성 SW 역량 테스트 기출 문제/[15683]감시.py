@@ -31,7 +31,7 @@ def count_blind(start, graph):
                 #다음 칸
                 nx += dx[idx]
                 ny += dy[idx]
-            count_blind(start+1, graph_temp)
+        count_blind(start+1, graph_temp)
 
 
 if __name__=="__main__":
