@@ -1,5 +1,7 @@
-#월간 코드 챌린지 시즌2
 #20210618
+#월간 코드 챌린지 시즌2
+
+
 def solution(numbers):
     answer = []
     
