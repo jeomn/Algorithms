@@ -6,14 +6,11 @@ import java.util.StringTokenizer;
 public class BOJ_1992_QuadTree {
 	
 	static int[][] image;
-	static int[] dx = {0, 0, 1, 1};
-	static int[] dy = {0, 1, 0, 1};
 	static LinkedList<Character> result;
 	
 	
 	public static void main(String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer st; // = new StringTokenizer(br.readLine());
 		
 		int N = Integer.parseInt(br.readLine());
 		
