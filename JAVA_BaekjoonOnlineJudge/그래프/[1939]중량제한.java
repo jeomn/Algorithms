@@ -1,3 +1,5 @@
+//20210915 스터디에서 시간을 좀 더 단축할 방법에 대해 들었다...
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -52,12 +54,17 @@ public class Main {
 		int factory2 = Integer.parseInt(st.nextToken())-1;
 		
 		path = new int[N];
+		/*
 		findRoute(factory1);
 		
 		System.out.println(path[factory2]);
+		*/
+		int result = findRoute(factory1, factory2);
+        	System.out.println(result);
 	}
 	
-	private static void findRoute(int start) {
+	//private static void findRoute(int start) {
+	private static int findRoute(int start, int end) {
 		PriorityQueue<Node> route = new PriorityQueue<>();
 		route.add(new Node(start, 0));
 		
@@ -65,6 +72,8 @@ public class Main {
 			Node node = route.poll();
 			int weight = node.w;
 			int num = node.n;
+			
+			if(num == end) return path[end];
 			
 			if(weight < path[num]) continue;
 			
@@ -79,5 +88,6 @@ public class Main {
 				}
 			}
 		}
+		return 0;
 	}
 }
