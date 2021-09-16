@@ -26,5 +26,6 @@ public class Main {
 			sum +=dp[N][i];
 		}
 		System.out.println(sum%10007);
+		//System.out.println(Arrays.stream(dp[N]).sum()%10007);	//이것도 
 	}
 }
