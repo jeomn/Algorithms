@@ -69,9 +69,12 @@ if __name__ == '__main__':
     result = find_ball_move_direction(r_r, r_c, b_r, b_c)
     print(result)
 
-    
+
+
+"""    
     #20210916 REVIEW
-    import sys
+"""
+import sys
 from collections import deque
 
 
