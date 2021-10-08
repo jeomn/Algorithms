@@ -35,8 +35,8 @@ class Solution {
     }
     
     public boolean isSocialDistancing(int x, int y){
-        //상하좌우 탐색
         for(int i=0; i<4; i++){
+            //상하좌우
             int nx = x+dx[checkUDLR[i]];
             int ny = y+dy[checkUDLR[i]];
             
@@ -48,13 +48,10 @@ class Solution {
             ny += dy[checkUDLR[i]];
             if(nx<0 || nx>=5 || ny<0 ||ny>=5) continue;
             if(waitingRoom[nx][ny] == 'P') return false;
-        }
-        
-        
-        //대각선 확인
-        for(int i=0; i<3; i++){
-            int nx = x+dx[checkDiagonal[i]];
-            int ny = y+dy[checkDiagonal[i]];
+            
+            //대각선
+            nx = x+dx[checkDiagonal[i]];
+            ny = y+dy[checkDiagonal[i]];
             
             if(nx<0 || nx>=5 || ny<0 ||ny>=5) continue;
             if(waitingRoom[nx][ny] != 'P') continue;
