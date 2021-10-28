@@ -29,15 +29,12 @@ class Solution {
             }
             
             if(i==n-1){
-                if(count<m){
-                    lastTime = shuttle;
-                }else{
-                    lastTime -= 1;
-                }
+                if(count<m) lastTime = shuttle;
+                else lastTime -= 1;
             }
 
             shuttle+=t;
-            if(shuttle%100 == 60) shuttle = ((shuttle/100)+1)*100;
+            if(shuttle%100 >= 60) shuttle = ((shuttle/100)+1)*100 + ((shuttle%100)-60);
         }
         
         if(lastTime%100 == 99) lastTime = ((lastTime/100))*100 + 59;
