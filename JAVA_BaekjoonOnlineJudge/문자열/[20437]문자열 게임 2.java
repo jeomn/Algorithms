@@ -36,7 +36,7 @@ public class Main {
 			if(alphabet[c-'a'] < K) continue;
 			
 			int cnt=0, j=0;
-			for(j=i; j<Wlength; j++) { //cnt=1 / j=i+1로 하면 5%에서 계속 틀렸음
+			for(j=i; j<Wlength; j++) { //cnt=1 / j=i+1로 하면 5%에서 계속 틀렸음 >> j의 문제. K==1일때, j 시작이 이미 i+1이 되서 최소/최대 연속 문자열이 1이 아닌 2가 됨.
 				if(W.charAt(j)==c) cnt++;
 				if(cnt==K) {
 					int length = j-i+1;
